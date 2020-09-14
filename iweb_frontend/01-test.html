@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style>
+		body{
+			margin: 0;
+		}
+		#d1{
+			box-sizing: border-box;
+			background: #afa;
+			height: 100px;
+			width: 30%;
+			float: left;
+			 border-left: 30px solid #000; /* 边框计算到总边框  */
+			
+			/* 内边距计算到总宽度 */
+			padding-left: 20px; 
+			
+			/* 外边距计算到总宽度 */
+			 margin-left: 1px; 
+		}
+		#d2{
+			background: #faa;
+			height: 100px;
+			width: 70%;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="d1">1111</div>
+	<div id="d2">2222</div>
+</body>
+</html>
