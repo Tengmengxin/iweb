@@ -5,36 +5,72 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>首页-i前端</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/scaffolding.css">
+		<link rel="stylesheet" href="css/Layout.css">
+		<link rel="stylesheet" href="css/components.css">
 	</head>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/scaffolding.css">
-	<link rel="stylesheet" href="css/Layout.css">
-	<link rel="stylesheet" href="css/components.css">
-	
+
+
 	<body>
 		<!-- 1.最顶部的“灰色条”：topbar-->
 		<div class="topbar">
 			<div class="container">
-				<div class="row text-right">
-					<a href="#">
+				<div class="text-right">
+					<a href="#" class="topbar-item">
 						<span class="fa fa-star"></span>
-						<span class="fa fa-phone"></span>
+						收藏i前端
+					</a>
+					<a href="#" class="topbar-item">
+						<span class="fa  fa-lg fa-mobile-phone"></span>
+						<span class="download-app">下载手机客户端</span>
+					</a>
+					<span class="topbar-item">
 						<span class="fa fa-envelope"></span>
-						<span class="fa fa-television"></span>
-						<span class="fa fa-home"></span>
-						<span class="fa fa-shopping-cart"></span>
-						<span class="fa fa-photo"></span>
-						收藏i前端</a>
+						反馈邮箱：iweb@126.com
+					</span>
+					<span class="topbar-item">
+						<span class="fa fa-fax"></span>
+						客服热线：4008-200-200
+					</span>
 				</div>
 			</div>
 		</div>
-		<!-- 2.搜索条：searchbar -->
-		<div class="searchbar">
-			<div class="container">LOGO+搜索条</div>
-		</div>
+		
+		<!--2.搜索条：searchabar-->
+			<div class="searchbar">
+				<div class="container">
+					<div class="row">
+						<!--左侧的LOGO-->
+						<div class="col-lg-2">
+							<a href="index.html">
+								<img src="img/logo.png" class="logo"></a>
+						</div>
+						<!--靠右对齐的搜索框和购物车按钮-->
+						<div class="col-lg-10">
+							<!-- 搜索条 -->
+							<div class="search">
+								<input placeholder="课程搜索" class="search-input">
+								<button class="search-button">
+									<span class="fa fa-search"></span>
+								</button>
+							</div>
+							<!-- 我的购物车 -->
+							<div class="my-cart">
+								<span class="fa fa-shopping-cart"></span>
+								我的购物车(0)
+								<span class="fa fa-caret-down"></span>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		<!-- 3.导航条：navbar -->
 		<div class="navbar">
-			<div class="container">导航条</div>\
+			<div class="container">导航条</div>
 		</div>
 		<!-- 4.轮播广告条：carouselbar -->
 		<div class="carouselbar">

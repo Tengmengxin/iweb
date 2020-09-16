@@ -15,3 +15,18 @@
  推荐使用开源的FontAwsome图标字体（提供了675个常用的图标）
  
  FontAwsome的使用步骤：
+ 1.下载字体文件，保存到项目目录下，如fonts/，以供用户浏览网页时可以下载到字体文件
+ 2.在CSS文件中声明两个class：
+ @font-face{
+	 font-family:'FontAwsome';
+	 src:url('../fonts/FontAwsome.ttf');
+ }
+ .fa{
+	 font-family:'FontAwsome';
+ }
+ .fa-bank:before{
+	 content:'\f19c';//生成一个图标的编码
+ }
+ 3.页面中引入上述CSS，开始使用图标字体：
+ <span class='fa' fa-star>\f19c</span>
+ 注意：因为使用前置内容生成创建的图标，所以每个span中只能放置一个图标，即需要N个span
