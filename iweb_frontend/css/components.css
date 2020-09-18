@@ -161,13 +161,105 @@
 	border-radius: 50%;
 	float: left;
 	margin: 0 9px;
-	cursor: pointer; /* 光标悬停时变“小手” */
+	cursor: pointer;
+	/* 光标悬停时变“小手” */
 }
-.carousel .indicators li.active{
-	background: #FF6600;
+
+.carousel .indicators li.active {
+	background: #FF9300;
 }
+
+.carousel .controls {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.carousel .controls .prev,
+.carousel .controls .next {
+	position: absolute;
+	width: 54px;
+	height: 94px;
+	font-size: 4em;
+	line-height: 94px;
+	/* 文字竖直居中 */
+	text-align: center;
+	/* 文字水平居中 */
+	/* opacity: 5; 会导致当前元素及其中的文字/图片半透明 */
+	background: rgba(0, 0, 0, 0.2);
+	/* 仅背景半透明 */
+	color: #fff;
+	margin-top: -47px;
+}
+
+.carousel .controls .prev {
+	margin-left: -496px;
+
+}
+
+.carousel .controls .prev:hover,
+.carousel .controls .next:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel .controls .next {
+	margin-left: 442px;
+}
+
 .mainbar {
 	border-bottom: 1px solid #ddd;
+}
+
+.mainbar .header {
+	position: relative;
+	/* 为决定定位的子元素提供参照物 */
+	border-bottom: 3px solid #ddd;
+}
+
+.mainbar .header h3 {
+	font-weight: normal;
+	/*标题字取消加粗*/
+	margin-bottom: 0.5em;
+	padding: 0 0.5em;
+}
+
+.mainbar .header a {
+	position: absolute;
+	right: 0;
+	bottom: 0.3em;
+}
+
+.mainbar .header span {
+	width: 5.6em;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: -3px;/* 此处如果使用0，仍然在父容器边框内 */
+	background: #00BE56;
+}
+.mainbar .course{
+	padding: 1.2em 0;/* 每个列中的.course需要自己提供上下间距 */
+	/* border: 1px solid #000; */
+}
+
+.mainbar .course .pic img{
+	width: 100%;
+}
+.mainbar .course .title{
+	display: block;/* 让课程标题占一整行 */
+	line-height: 1.8em;
+}
+.mainbar .course .teacher{
+	display: block;
+	font-size: 0.8em;
+	color: #999;
+	line-height: 1.4em;
+}
+.mainbar .course .price{
+	display: block;
+	font-weight: bold;
+	color: #ff5a00;
+	line-height: 1.8em;
 }
 
 .bottombar {
