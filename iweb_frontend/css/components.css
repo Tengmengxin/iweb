@@ -234,33 +234,107 @@
 	height: 3px;
 	position: absolute;
 	left: 0;
-	bottom: -3px;/* 此处如果使用0，仍然在父容器边框内 */
+	bottom: -3px;
+	/* 此处如果使用0，仍然在父容器边框内 */
 	background: #00BE56;
 }
-.mainbar .course{
-	padding: 1.2em 0;/* 每个列中的.course需要自己提供上下间距 */
+
+.mainbar .course {
+	padding: 1.2em 0;
+	/* 每个列中的.course需要自己提供上下间距 */
 	/* border: 1px solid #000; */
 }
 
-.mainbar .course .pic img{
+.mainbar .course .pic img {
 	width: 100%;
 }
-.mainbar .course .title{
-	display: block;/* 让课程标题占一整行 */
+
+.mainbar .course .title {
+	display: block;
+	/* 让课程标题占一整行 */
 	line-height: 1.8em;
 }
-.mainbar .course .teacher{
+
+.mainbar .course .teacher {
 	display: block;
 	font-size: 0.8em;
 	color: #999;
 	line-height: 1.4em;
+	text-align: left;
 }
-.mainbar .course .price{
+
+.mainbar .course .price {
 	display: block;
 	font-weight: bold;
 	color: #ff5a00;
 	line-height: 1.8em;
 }
+
+.mainbar .teacher-item {
+	padding: 1.2em 0;
+	/* 每个列中的.course需要自己提供上下间距 */
+	/* border: 1px solid #000; */
+}
+
+.mainbar .teacher-item .pic img {
+	width: 100%;
+}
+
+.mainbar .teacher-item .tname {
+	display: block;
+	font-size: 1.2em;
+	line-height: 2.2em;
+	text-align: center;
+	color: #555;
+}
+
+.mainbar .teacher-item .maincourse {
+	text-align: center;
+	display: block;
+	font-size: 0.8em;
+	color: #999;
+}
+
+/* 在PAD屏幕下，讲师列表一行只能显示3.5个讲师信息，溢出内容水平滚动 */
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.teacher-list {
+		white-space: nowrap;
+		/* 一行结尾处的空白处不换行 */
+		overflow-x: auto;
+		/* 水平方向内容溢出时显示滚动条*/
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.col-lg-5-1 {
+		display: inline-block;
+		float: none;
+		/* 取消列浮动---浮动元素只要空间不够必然转到下一行 */
+		width: 214px;
+		/* 根据PAD屏下的.container宽度（750px），设置内容宽 */
+	}
+}
+
+/* 在PHONE屏幕下，讲师列表一行只能显示2.5个讲师信息，溢出内容水平滚动 */
+@media screen and (max-width:767px) {
+	.teacher-list {
+		white-space: nowrap;
+		/* 一行结尾处的空白处不换行 */
+		overflow-x: auto;
+		/* 水平方向内容溢出时显示滚动条*/
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.col-lg-5-1 {
+		display: inline-block;
+		float: none;
+		/* 取消列浮动---浮动元素只要空间不够必然转到下一行 */
+		width: 140px;
+		/* 根据PAD屏下的.container宽度（750px），设置内容宽 */
+	}
+}
+
 
 .bottombar {
 	background: #EEEEEE;
@@ -269,4 +343,40 @@
 /* 选择"底部条"中的"容器"下的第一个.row元素 */
 .bottombar>.container>.row:first-child {
 	border-bottom: 1px solid #ddd;
+}
+
+.bottombar .fn-menu-header {
+	margin-bottom: 5px;
+	color: #555;
+
+}
+
+.bottombar .fn-menu {
+	color: #666;
+	line-height: 1.7em;
+}
+
+.bottombar .contact {
+	margin-top: 40px;
+}
+
+.bottombar .contact .fa-fax {
+	color: #00BE56;
+	font-size: 4em;
+	float: left;
+}
+
+.bottombar .contact .hotline {
+	margin-left: 3.5em;
+	line-height: 1.5em;
+	font-size: 1.5em
+}
+
+.bottombar .copyright {
+	text-align: center;
+	line-height: 2em;
+	color: #999;
+	margin: 1em 0 1.5em 0;
+	/* 上右下左 */
+	font-size: .8em;
 }
