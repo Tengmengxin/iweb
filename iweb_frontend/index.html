@@ -14,7 +14,7 @@
 
 	<body>
 		<!-- 1.最顶部的“灰色条”：topbar-->
-		<div class="topbar">
+		<div class="topbar hidden-sm">
 			<div class="container">
 				<div class="text-right">
 					<a href="#" class="topbar-item">
@@ -42,30 +42,36 @@
 			<div class="container">
 				<div class="row">
 					<!--左侧的LOGO-->
-					<div class="col-lg-2">
+					<div class="col-lg-2 col-sm-2 logo-container">
 						<a href="index.html">
-							<img src="img/logo.png" class="logo"></a>
+							<img src="img/logo.png" class="logo hidden-sm"></a>
+						<img src="img/logo_reverse.png" class="logo_reverse hidden-md hidden-lg"></a>
 					</div>
 					<!--靠右对齐的搜索框和购物车按钮-->
-					<div class="col-lg-10">
-						<!-- 搜索条 -->
-						<div class="search">
-							<input placeholder="课程搜索" class="search-input">
-							<button class="search-button">
-								<span class="fa fa-search"></span>
-							</button>
-						</div>
-						<!-- 我的购物车 -->
-						<div class="my-cart">
-							<span class="fa fa-lg fa-shopping-cart"></span>
-							我的购物车(0)
-							<span class="fa fa-caret-down"></span>
+			
+			<div class="col-lg-10 col-sm-8">
+				<!-- 搜索条 -->
+				<div class="search">
+					<input placeholder="课程搜索" class="search-input">
+					<button class="search-button">
+						<span class="fa fa-search"></span>
+					</button>
+				</div>
+				<!-- 我的购物车 -->
+				<div class="my-cart hidden-sm">
+					<span class="fa fa-lg fa-shopping-cart"></span>
+					我的购物车(0)
+					<span class="fa fa-caret-down"></span>
 
 
-						</div>
-					</div>
 				</div>
 			</div>
+
+			<!-- 仅在PHONE屏幕下显示的：汉堡包按钮 -->
+			<div class="col-sm-2 hidden-md hidden-lg">
+				<span class="fa fa-navicon hamburger"></span>
+			</div>
+		</div>
 		</div>
 
 		<!-- 3.导航条：navbar -->
@@ -199,15 +205,15 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6">
-						
+
 						<div class="course">
 							<a href="#" class="pic"><img src="img/course/04.jpg"></a>
 							<a href="#" class="title">09-微信小程序开发</a>
 							<a href="#" class="teacher">讲师：程涛</a>
 							<span class="price">￥599.00</span>
 						</div>
-						</div>
-						
+					</div>
+
 
 				</div>
 				<!-- 5.2热门课程 -->
@@ -382,11 +388,11 @@
 		<!-- 6.底部条：bottombar -->
 		<div class="bottombar">
 			<div class="container">
+				<!-- 底部功能菜单 -->
 				<div class="row">
-					<!-- 底部功能菜单 -->
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-12 col-sm-12">
 						<div class="row">
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-md-3 col-sm-6">
 								<h4 class="fn-menu-header">关于i前端</h4>
 								<ul class="fn-menu">
 									<li><a href="#">发展历程</a></li>
@@ -395,7 +401,7 @@
 									<li><a href="#">加入我们</a></li>
 								</ul>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-md-3 col-sm-6">
 								<h4 class="fn-menu-header">新手帮助</h4>
 								<ul class="fn-menu">
 									<li><a href="#">学员账号</a></li>
@@ -404,16 +410,16 @@
 									<li><a href="#">上课地点</a></li>
 								</ul>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-md-3 col-sm-6">
 								<h4 class="fn-menu-header">常见问题</h4>
 								<ul class="fn-menu">
 									<li><a href="#">如何注册</a></li>
-									<li><a href="#">如何搜课</a></li>
+									<li><a href="#">如何授课</a></li>
 									<li><a href="#">如何报名</a></li>
 									<li><a href="#">如何缴费</a></li>
 								</ul>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-md-3 col-sm-6">
 								<h4 class="fn-menu-header">联系我们</h4>
 								<ul class="fn-menu">
 									<li><a href="#">校区电话</a></li>
@@ -423,27 +429,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-lg-5 col-md-12 col-sm-12">
 						<div class="contact">
 							<span class="fa fa-fax"></span>
 							<div class="hotline">
-								客服热线</br>
-								4008-220-220(9:00-24:00)
+								客服热线 <br>
+								4008-220-220 (09:00-24:00)
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- 版权声明 -->
-				<div class="row">
-					<div class="col-lg-12">
+				<div class="row hidden-lg hidden-md hidden-sm">
+					<div class="col-lg-12 col-md-12">
 						<div class="copyright">
-							Copyright &copy; 2016 iqianduan.com, All Rights Reserved 版权所有<br>
+							Copyright © 2016 iqianduan.com, All Rights Reserved 版权所有 <br>
 							北京前端教育科技有限公司　京ICP备123456号-1 京公网安备110180201608号
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</body>
 </html>
