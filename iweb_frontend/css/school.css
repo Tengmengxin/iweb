@@ -1,27 +1,30 @@
-.schoolbar .container a,
-.schoolbar .container span{
-	color: #999999;
-	
+.schoolbar>.container a,
+.schoolbar>.container span {
+	color: #999;
 }
-.schoolbar{
+
+.schoolbar {
 	margin-top: 5px;
 }
 
-.adress{
+.address {
 	width: 800px;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
-.address-items{
-	padding: 30px 0;
+
+.address-items {
+	padding: 32px 0;
 	border-bottom: 1px dotted #ccc;
 }
-.location{
-	color: #00A43D;
-	margin: 0 70px 0;
+
+.fa-map-marker {
+	margin:0 70px 0;
+	color: #55C760;
 }
-.address-items>h3{
+
+.address-items>h3 {
 	font-size: 18px;
 	padding-left: 150px;
 	margin-top: -50px;
@@ -29,7 +32,8 @@
 	margin-bottom: 10px;
 	padding-bottom: 8px;
 }
-.address-items>p{
+
+.address-items>p {
 	font-size: 10px;
 	color: #999;
 	padding-left: 150px;
