@@ -1,0 +1,78 @@
+.mainbar{
+	background: #fcfcfc;
+	
+}
+.mainbar .container{
+	margin: 3em auto 3.5em;
+	border: 1px solid #e6e6e6;
+	/* 边框外侧外阴影:水平偏移量  竖直偏移量  阴影半径 阴影颜色 */
+	box-shadow:0 0 2px #f00;
+	/* 边框的圆角半径 */
+	border-radius: 2px;
+	padding: 1em 7em 2em;
+	
+}
+.mainbar:after,
+.mainbar:before{/*越界问题*/
+	content: '';
+	display: table;
+}
+
+
+.form .header{
+	font-size: 1.4em;
+	line-height: 4em;
+	color: #ff9300;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+.mainbar .row{
+	line-height: 2.8em;
+	padding: 0.6em 0;
+	
+}
+.form label{
+	/* label默认方式是inline元素，无法指定左右对齐，改为快级元素 */
+	display: block;
+	text-align: right;
+}
+.form input{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 1em;
+	/* 竖直方向上与 */
+	vertical-align: middle;
+}
+.form span.error{
+	color: #f00;
+	
+}
+.form span.succ{
+	color: #00c160;
+}
+.form .captcha{
+	height: 34px;
+	/* 图片与后面的文字竖直对齐 */
+	vertical-align: middle;
+}
+.form .refresh{
+	font-size: 2em;
+	color: #00BE56;
+	cursor: pointer;
+	line-height: 34px;
+}
+.form span.error span{
+	font-size: 12px;
+}
+@media screen and (max-width:767px) {
+	.form .row{
+		line-height: 2em;
+	}
+	.form label{
+		text-align: left;
+	}
+	.mainbar .container{
+		padding: 0.5em 2em 1em;
+	}
+}

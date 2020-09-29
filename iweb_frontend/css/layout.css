@@ -88,6 +88,42 @@ PHONE:  small - sm
 	.col-lg-5-5 {
 		width: 100%;
 	}
+	.col-lg-offset-1 {
+		margin-left: 8.3333333333%;  /* 1/12 */
+	}
+	.col-lg-offset-2 {
+		margin-left: 16.66666666666%;  /* 2/12 */
+	}
+	.col-lg-offset-3 {
+		margin-left: 25%;  /* 3/12 */
+	}
+	.col-lg-offset-4 {
+		margin-left: 33.33333333333%;  /* 4/12 */
+	}
+	.col-lg-offset-5 {
+		margin-left: 41.666666666666%;  /* 5/12 */
+	}
+	.col-lg-offset-6 {
+		margin-left: 50%;  /* 6/12 */
+	}
+	.col-lg-offset-7 {
+		margin-left: 58.3333333333%;  /* 7/12 */
+	}
+	.col-lg-offset-8 {
+		margin-left: 66.66666666666%;  /* 8/12 */
+	}
+	.col-lg-offset-9 {
+		margin-left: 75%;  /* 9/12 */
+	}
+	.col-lg-offset-10 {
+		margin-left: 83.33333333333%;  /* 10/12 */
+	}
+	.col-lg-offset-11 {
+		margin-left: 91.666666666666%;  /* 11/12 */
+	}
+	.col-lg-offset-12 {
+		margin-left: 100%;  /* 12/12 */
+	}
 	.col-lg-1 {
 		width: 8.3333333333%;  /* 1/12 */
 	}
@@ -128,6 +164,42 @@ PHONE:  small - sm
 
 /* 在PAD屏幕下每个列的宽度 */ 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+	.col-md-offset-1{
+		margin-left: 8.3333333333%;
+	}
+	.col-md-offset-2 {
+		margin-left: 16.66666666666%;  /* 2/12 */
+	}
+	.col-md-offset-3 {
+		margin-left: 25%;  /* 3/12 */
+	}
+	.col-md-offset-4 {
+		margin-left: 33.33333333333%;  /* 4/12 */
+	}
+	.col-md-offset-5 {
+		margin-left: 41.666666666666%;  /* 5/12 */
+	}
+	.col-md-offset-6 {
+		margin-left: 50%;  /* 6/12 */
+	}
+	.col-md-offset-7 {
+		margin-left: 58.3333333333%;  /* 7/12 */
+	}
+	.col-md-offset-8 {
+		margin-left: 66.66666666666%;  /* 8/12 */
+	}
+	.col-md-offset-9 {
+		margin-left: 75%;  /* 9/12 */
+	}
+	.col-md-offset-10 {
+		margin-left: 83.33333333333%;  /* 10/12 */
+	}
+	.col-md-offset-11 {
+		margin-left: 91.666666666666%;  /* 11/12 */
+	}
+	.col-md-offset-12 {
+		margin-left: 100%;  /* 12/12 */
+	}
 	.col-md-1 {
 		width: 8.3333333333%;  /* 1/12 */
 	}
@@ -182,6 +254,42 @@ PHONE:  small - sm
 	}
 	.col-sm-5-5{
 		width: 100%;
+	}
+	.col-sm-offset-1 {
+		margin-left: 8.3333333333%;  /* 1/12 */
+	}
+	.col-sm-offset-2 {
+		margin-left: 16.66666666666%;  /* 2/12 */
+	}
+	.col-sm-offset-3 {
+		margin-left: 25%;  /* 3/12 */
+	}
+	.col-sm-offset-4 {
+		margin-left: 33.33333333333%;  /* 4/12 */
+	}
+	.col-sm-offset-5 {
+		margin-left: 41.666666666666%;  /* 5/12 */
+	}
+	.col-sm-offset-6 {
+		margin-left: 50%;  /* 6/12 */
+	}
+	.col-sm-offset-7 {
+		margin-left: 58.3333333333%;  /* 7/12 */
+	}
+	.col-sm-offset-8 {
+		margin-left: 66.66666666666%;  /* 8/12 */
+	}
+	.col-sm-offset-9 {
+		margin-left: 75%;  /* 9/12 */
+	}
+	.col-sm-offset-10 {
+		margin-left: 83.33333333333%;  /* 10/12 */
+	}
+	.col-sm-offset-11 {
+		margin-left: 91.666666666666%;  /* 11/12 */
+	}
+	.col-sm-offset-12 {
+		margin-left: 100%;  /* 12/12 */
 	}
 	.col-sm-1 {
 		width: 8.3333333333%;  /* 1/12 */
