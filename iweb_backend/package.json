@@ -1,0 +1,29 @@
+{
+  "name": "iweb_backend",
+  "version": "1.0.0",
+  "description": "iWeb project backend data API subsystem",
+  "main": "main.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tengmengxin/iweb.git"
+  },
+  "keywords": [
+    "iweb",
+    "backend",
+    "api",
+    "tengmengxin"
+  ],
+  "author": "Tengmengxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tengmengxin/iweb/issues"
+  },
+  "homepage": "https://github.com/tengmengxin/iweb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
